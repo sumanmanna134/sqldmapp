@@ -19,6 +19,7 @@ namespace sqlapp.Services
             List<Course> _lst = new List<Course>();
             string _statement = "SELECT CourseID,CourseName,rating from Course;";
             MySqlConnection _connection = GetConnection();
+            Console.WriteLine(_connection.ToString());
             // Let's open the connection
             _connection.Open();
 
